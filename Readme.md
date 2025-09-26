@@ -20,4 +20,5 @@ The program is contained within a single `StudentSystem.java` file and uses two 
 
 ### Output 
  ![Output](image.png)
+
  ![Output](image-1.png)

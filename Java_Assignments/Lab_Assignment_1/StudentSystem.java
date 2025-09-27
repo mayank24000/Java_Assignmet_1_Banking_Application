@@ -13,7 +13,7 @@ class Student {
         this.Name = name;
         this.Course = course;
         this.Marks = marks;
-        this.Grade = calculateGrade(); // Calculate grade when the student is created
+        this.Grade = calculateGrade();
     }
 
     // Method to calculate the grade based on marks
@@ -27,7 +27,7 @@ class Student {
         } else if (Marks >= 60) {
             return 'D';
         } else {
-            return 'F'; // F for marks below 60
+            return 'F';
         }
     }
 
@@ -84,7 +84,6 @@ public class StudentSystem {
     }
 
     public static void addStudent() {
-        // First, check if our array is full
         if (studentCount >= studentList.length) {
             System.out.println("Cannot add more students. The list is full.");
             return;
@@ -92,7 +91,7 @@ public class StudentSystem {
 
         System.out.print("Enter Roll No: ");
         int rollNo = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         System.out.print("Enter Name: ");
         String name = scanner.nextLine();

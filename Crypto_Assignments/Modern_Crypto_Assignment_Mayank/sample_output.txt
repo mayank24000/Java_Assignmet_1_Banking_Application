@@ -1,0 +1,84 @@
+Modern_Crypto_Assignment_Mayank
+=================================
+Course: ENSP259 – Fundamentals of Cryptography
+Semester: III | Faculty: Dr. Anshu
+
+---------------------------------
+Q1: Symmetric Encryption (DES, 3DES, AES)
+---------------------------------
+Command:
+> python encryption_simulation.py
+
+DES Ciphertext: 4093df80c928045393d738bf934ca59ef657fbf2f5b8619ad66662051e751e85t
+DES Time: <4.6e-05 s>
+
+3DES Ciphertext: 30f209e34eec7e74a4349b16bae8d570ce0466eda32b3d2d511cd36caf228a3e
+3DES Time: 1.8e-05 s
+
+AES Ciphertext: 412bbddc068b4e1dc352b78b4abceccc9f594e3816525c5139a2196e17d2c8fc 
+AES Time: 5e-06 s
+
+Observation:
+AES is most secure and fastest; DES is obsolete; 3DES is slower.
+
+---------------------------------
+Q2: AES Modes of Operation
+---------------------------------
+Command:
+> python aes_modes.py
+
+ECB Ciphertext: d37d4bc318e114532d05f02d3f3d53da8529d37526d04896e9...
+CBC Ciphertext: 03ff062b3790900529da502871dc1dc4bae4105ba10b27f863...
+CFB Ciphertext: 855c18af84e47848a339f62aafe5c017f6c794f8636e4f6bd8...
+OFB Ciphertext: f0b1f3acc14b3737fc0bff6c85fe0a2145661273e83c03faf8...
+CTR Ciphertext: 493e55c9f967e89a2304c89e72d1fab728fe2cc17a1b0cb6ea...
+
+Observation:
+ECB shows repetition; CBC/CFB/OFB/CTR hide patterns using IVs or nonces.
+
+---------------------------------
+Q3: Cryptographic Hash Functions
+---------------------------------
+Command:
+> python hashing_demo.py
+
+MD5: d41d8cd98f00b204e9800998ecf8427e
+SHA-1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+Observation:
+SHA-256 is collision-resistant and secure; MD5 & SHA-1 are weak.
+
+---------------------------------
+Q4: HMAC – Data Integrity
+---------------------------------
+Command:
+> python hmac_test.py
+
+Original HMAC: f304c11274cabc93abe79f3abb848b94026d3e1c9a49071ea96fbece9b9f2bb0
+Modified File HMAC: 143ff9ae8d00a2d3674bd028b2cedb2e9edd31af8ddd26e01c889a360786458d
+
+Observation:
+HMAC detects tampering; values differ when file changes.
+
+---------------------------------
+Q5: Replay Attack Simulation
+---------------------------------
+Command:
+> python replay_attack.py
+
+=== Token Issuance ===
+Issued token: 1761321664.4209793
+
+=== Immediate validation ===
+Validate: True
+
+=== Replaying after expiry ===
+Validate (window=2): False
+
+Prevention:
+Use nonces, timestamps, short-lived tokens, OTPs, and TLS.
+
+---------------------------------
+End of sample_output.txt
+---------------------------------

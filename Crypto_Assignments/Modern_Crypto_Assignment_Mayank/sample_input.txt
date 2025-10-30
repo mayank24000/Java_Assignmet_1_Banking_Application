@@ -1,0 +1,11 @@
+This is a sample input file for the Modern Crypto Assignment.
+Author: Mayank
+
+--- Data for hashing and HMAC ---
+Line 1: Confidential Transaction
+Line 2: Confidential Transaction
+Line 3: Confidential Transaction
+
+
+Timestamp: 2025-09-01 12:00:00
+Note: This file is used to compute MD5, SHA-1, SHA-256 and HMAC values.
